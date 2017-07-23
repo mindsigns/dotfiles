@@ -1,0 +1,25 @@
+let g:spacevim_custom_plugins = [
+        \ ['jimenezrick/vimerl'],
+        \ ['w0rp/ale'],
+        \ ['gasparch/alchemist.vim.git'],
+        \ ['gasparch/vim-elixir.git'],
+        \ ['benmills/vimux.git'],
+        \ ['spiegela/vimix.git'],
+        \ ['edkolev/tmuxline.vim'],
+        \ ]
+
+let g:spacevim_disabled_plugins=[
+    \ ['Yggdroot/indentLine'],
+    \ ]
+
+let g:spacevim_colorscheme = 'gruvbox'
+let g:spacevim_colorscheme_default = 'gruvbox'
+
+let g:ale_emit_conflict_warnings = 0
+
+let g:indentLine_enabled = 0
+
+set norelativenumber
+set nonumber
+
+set mouse=

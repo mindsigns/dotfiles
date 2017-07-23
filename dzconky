@@ -1,0 +1,16 @@
+use_spacer        left
+update_interval   1
+out_to_console    yes
+pad_percents      3
+#background        yes
+
+TEXT
+^fg(\#4C4C4C)[^fg(\#C0C0C0)${time %H:%M:%S | %h %d}\
+^fg(\#4C4C4C)]  [^fg(\#899CA1)${cpu}% ^fg(\#8C4665) ^r(1x11)${cpubar}^r(1x11)\
+^fg(\#4C4C4C)]  [^fg(\#899CA1)${memperc}% ${mem}\
+^fg(\#4C4C4C)]  [^fg(\#5E882F)^i(/home/jon/.icons/down.xpm)^fg(\#BF4D80)${totaldown wlp2s0}\
+^fg(\#6096BF) ${totalup wlp2s0}^fg(\#5E882F)^i(/home/jon/.icons/up.xpm)\
+ ^fg(\#899CA1)${downspeed wlp2s0} \
+^fg(\#4C4C4C)]  [\
+^fg(\#6096BF)/:^fg(\#899CA1)${fs_used_perc /}%\
+${acpitemp}^fg(\#4C4C4C)C | ^fg(\#899CA1)${battery_short}^fg(\#4C4C4C)]
