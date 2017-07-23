@@ -23,3 +23,7 @@ set norelativenumber
 set nonumber
 
 set mouse=
+
+map ,t <Esc>:tabnew<CR>
+map ,n <Esc>:tabNext<CR>
+map ,p <Esc>:tabprevious<CR>
