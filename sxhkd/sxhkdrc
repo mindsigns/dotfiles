@@ -36,7 +36,8 @@ super + y
 
 # swap the current node and the biggest node
 super + Return
-	bspc node -s biggest
+	bspc node -s biggest.tiled.local
+#bspc node -s biggest
 
 #
 # state/flags
@@ -84,17 +85,19 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
+super + ctrl + b
+	bspc node --swap @brother
 #
 # preselect
 #
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+#super + ctrl + {h,j,k,l}
+#	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+#super + ctrl + {1-9}
+#	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
 super + ctrl + space
@@ -124,8 +127,11 @@ super + {Left,Down,Up,Right}
 alt + r
     bspc node @/ -R 90
 
-super + x ; {f,m}
+super + x + {f,m}
 	{firefox,menu}
 
 XF86Audio{LowerVolume,RaiseVolume,Mute}
 	amixer -q set Master {3%-,3%+,toggle}
+
+ctrl + super + l
+    id=$(bspc query --nodes --node); bspc node --to-desktop next; bspc desktop --focus next; bspc node --focus ${id}
