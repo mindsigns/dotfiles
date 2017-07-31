@@ -12,8 +12,10 @@ let g:spacevim_disabled_plugins=[
     \ ['Yggdroot/indentLine'],
     \ ]
 
-let g:spacevim_colorscheme = 'gruvbox'
-let g:spacevim_colorscheme_default = 'gruvbox'
+"let g:spacevim_colorscheme = 'gruvbox'
+"let g:spacevim_colorscheme_default = 'gruvbox'
+let g:spacevim_colorscheme = 'apprentice'
+let g:spacevim_colorscheme_default = 'apprentice'
 
 let g:ale_emit_conflict_warnings = 0
 
