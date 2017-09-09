@@ -7,7 +7,7 @@ super + shift + Return
 	termite
 
 # program launcher
-super + m
+ctrl + m
 	dmenu_run
 
 # make sxhkd reload its configuration files:
