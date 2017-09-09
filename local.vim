@@ -26,6 +26,10 @@ set nonumber
 
 set mouse=
 
+autocmd VimEnter * nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode           
+
 map ,t <Esc>:tabnew<CR>
 map ,n <Esc>:tabNext<CR>
 map ,p <Esc>:tabprevious<CR>
